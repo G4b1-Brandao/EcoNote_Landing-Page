@@ -1,10 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.navbar-econote {
+    font-family: 'Yellowtail', cursive;
+    font-size: 1.8rem; 
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-custom {
+    background-color: #343a40; 
+    color: white;
+    padding: 10px 40px;
+    font-family: Arial, sans-serif; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-custom a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.navbar-custom a:hover {
+    color: #ddd; 
+}
+
+.btn-butao {
+    background-color: #009997;  /* cor de fundo */
+    color: white;               /* cor do texto */
+    border: none;               /* remove borda padrão */
+}
+
+.btn-butao:hover {
+    background-color: #00796b;  /* cor quando passa o mouse */
+    color: #fff;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #f4e4b2;
 }
 
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 footer {
-    background-color: #212529; 
+    background-color: #343a40; 
     color: #f8f9fa; 
     padding: 1.5rem 1rem;
-    margin-top: auto; 
+}
+
+
+@media (max-width: 576px) {
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+        display: block;
+        margin: 10px auto;
+    }
+
+
+    .navbar-custom {
+        font-size: 14px;
+        padding: 4px 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
