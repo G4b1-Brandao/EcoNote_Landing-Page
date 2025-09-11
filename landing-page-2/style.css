@@ -97,4 +97,6 @@ body{
     font-style: normal;
 }
 
-
+footer {
+    background-color: var(--secondary-darker);
+}
