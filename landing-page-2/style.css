@@ -62,10 +62,24 @@ body{
     font-style: normal;
     font-weight: 400;
     color: var(--text);
-    margin-bottom: 50px;
+}
+
+.main-text p{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.main-text h1 span{
+    font-family: 'YellowTail', sans-serif;
+    font-size: 3rem;
 }
 
 .btn-gradient {
+    text-align: center;
+    text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     width: 200px;
@@ -80,7 +94,8 @@ body{
 }
 
 .btn-gradient:hover {
-  transform: scale(1.05); 
+    color: #0B2130;
+    transform: scale(1.05); 
 }
 
 @font-face {
