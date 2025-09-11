@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoNote - Conectando para a Inclusão Digital</title>
@@ -12,52 +13,44 @@
 </head>
 <body>
 
-    <header class="container-fluid text-center p-5 bg-primary text-white">
-        <div class="row">
-            <div class="col-12">
-                <h1>EcoNote</h1>
-                <p class="lead">Reaproveitamento de Eletrônicos para a Inclusão Digital</p>
+    <header class="container-fluid navbar-custom">
+        <div class="d-flex justify-content-between align-items-center">
+            
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="navbar-econote me-4">EcoNote</a>
+                <a href="https://g4b1brandao.pythonanywhere.com/cadastro/" class="nav-link-btn">Cadastre-se</a>
+                <a href="https://g4b1brandao.pythonanywhere.com/login/" class="nav-link-btn">Login</a>
+            </div>
+
+        
+            <div class="d-flex align-items-center">
+                <img src="assets/logoif.png" alt="Logo IF" style="height: 60px;">
             </div>
         </div>
     </header>
 
-    <main class="container my-5">
+    <main class="container">
         <div class="row g-4 align-items-center">
             
             <div class="col-md-6">
-                <h2>O que é o EcoNote?</h2>
-                <p>Sabemos que, na graduação, ter acesso a um notebook pode ser decisivo para acompanhar aulas, realizar pesquisas e entregar trabalhos com qualidade.
-                Pensando nisso, desenvolvemos esta plataforma para facilitar o empréstimo de notebooks para estudantes do IFCE - Campus Aracati..</p>
-                <a href="https://g4b1brandao.pythonanywhere.com/" class="btn btn-success btn-lg mt-3">Quero Solicitar um Notebook!</a>
+                <h2>Sem notebook para estudos?</h2>
+                <h3><b>Não se preocupe!</b></h3>
+                <p>Sabemos que, na graduação, ter acesso a um notebook ajuda <b>demais</b> a acompanhar aulas, realizar pesquisas e entregar trabalhos com qualidade.
+                Pensando nisso, desenvolvemos esta plataforma para facilitar o empréstimo de notebooks para estudantes do IFCE - Campus Aracati.</p>
+                <a href="https://g4b1brandao.pythonanywhere.com/cadastro/" class="btn btn-butao btn-lg mt-3">Quero Solicitar um Notebook!</a>
             </div>
 
             
             <div class="col-md-6">
-                <div class="card p-4 shadow-lg">
-                    <h3 class="card-title text-center">Interessado em Doar?</h3>
-                    <p class="text-center">Deixe seus dados para entrarmos em contato.</p>
-                    <form>
-                        <div class="mb-3">
-                            <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="seu-email@exemplo.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensagem" class="form-label">Mensagem</label>
-                            <textarea class="form-control" id="mensagem" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
-                    </form>
+                <div class="text-center">
+                    <img src="assets/pc1.png" alt="EcoNote Imagem" class="img-fluid" style="min-height: 10px; width: auto;">
                 </div>
             </div>
 
         </div>
     </main>
 
-    <footer class="container-fluid text-center p-3 bg-dark text-white">
+    <footer class="container-fluid text-center p-3  text-white">
         <div class="row">
             <div class="col-12">
                 <p>&copy; 2025 EcoNote. Todos os direitos reservados.</p>
