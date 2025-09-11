@@ -38,11 +38,9 @@ body{
 }
 
 .main-container{
-    padding-left: 100px;
-    padding-right: 100px;
+
     display: flex;
     background-color: var(--secondary);
-    height: 80vh;
     justify-content: center; 
     align-items: center;
 }
@@ -71,18 +69,18 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     width: 200px;
-    background: linear-gradient(135deg, var(--primary), #fff); /* gradiente do laranja pro pêssego */
-    border: none;         /* remove borda padrão */
-    color: var(--secondary);         /* cor do texto */
-    padding: 10px 10px;   /* espaçamento interno */
-    border-radius: 8px;   /* cantos arredondados */
-    font-size: 16px;      /* tamanho da fonte */
-    cursor: pointer;      /* cursor de clique */
-    transition: all 0.3s ease; /* animação suave */
+    background: linear-gradient(135deg, var(--primary), #fff);
+    border: none; 
+    color: var(--secondary); 
+    padding: 10px 10px;   
+    border-radius: 8px;   
+    font-size: 16px;      
+    cursor: pointer;      
+    transition: all 0.3s ease; 
 }
 
 .btn-gradient:hover {
-  transform: scale(1.05); /* leve aumento ao passar o mouse */
+  transform: scale(1.05); 
 }
 
 @font-face {
