@@ -1,64 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoNote - Conectando para a Inclusão Digital</title>
-    
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
+
     <header class="container-fluid navbar-custom">
         <div class="d-flex justify-content-between align-items-center">
-            
             <div class="d-flex align-items-center">
                 <a href="index.html" class="navbar-econote me-4">EcoNote</a>
                 <a href="https://g4b1brandao.pythonanywhere.com/cadastro/" class="nav-link-btn">Cadastre-se</a>
                 <a href="https://g4b1brandao.pythonanywhere.com/login/" class="nav-link-btn">Login</a>
             </div>
-
-        
             <div class="d-flex align-items-center">
                 <img src="assets/logoif.png" alt="Logo IF" style="height: 60px;">
             </div>
         </div>
     </header>
 
-    <main class="container">
-        <div class="row g-4 align-items-center">
-            
-            <div class="col-md-6">
-                <h2>Sem notebook para estudos?</h2>
-                <h3><b>Não se preocupe!</b></h3>
-                <p>Sabemos que, na graduação, ter acesso a um notebook ajuda <b>demais</b> a acompanhar aulas, realizar pesquisas e entregar trabalhos com qualidade.
-                Pensando nisso, desenvolvemos esta plataforma para facilitar o empréstimo de notebooks para estudantes do IFCE - Campus Aracati.</p>
-                <a href="https://g4b1brandao.pythonanywhere.com/cadastro/" class="btn btn-butao btn-lg mt-3">Quero Solicitar um Notebook!</a>
-            </div>
-
-            
-            <div class="col-md-6">
-                <div class="text-center">
-                    <img src="assets/pc1.png" alt="EcoNote Imagem" class="img-fluid" style="min-height: 10px; width: auto;">
-                </div>
-            </div>
-
+    <main class="container py-5 d-flex align-items-center">
+    <div class="row g-5 align-items-center">    
+        <div class="col-md-7">
+        <h1 class="fw-bold display-4 mb-3">Sem notebook para estudos?</h1>
+        <h3 class="mb-3">Não se preocupe!</h3>
+        <p class="lead">
+            Sabemos que, na graduação, ter acesso a um notebook ajuda <b>demais</b> a acompanhar aulas, realizar pesquisas e entregar trabalhos com qualidade.
+            Pensando nisso, desenvolvemos esta plataforma para facilitar o empréstimo de notebooks para estudantes do IFCE - Campus Aracati.
+        </p>
+        <div class="mt-4">
+            <a href="https://g4b1brandao.pythonanywhere.com" class="btn btn-butao btn-lg me-3 shadow">
+            Quero Solicitar um Notebook!
+            </a>
+            <a href="#contato" class="btn btn-outline-dark btn-lg">
+            Saiba mais
+            </a>
         </div>
+        </div>
+        <div class="col-md-5 text-center">
+        <img src="assets/pc1.png" alt="EcoNote Imagem" class="hero-img img-fluid">
+        </div>
+    </div>
     </main>
 
-    <footer class="container-fluid text-center p-3  text-white">
-        <div class="row">
-            <div class="col-12">
-                <p>&copy; 2025 EcoNote. Todos os direitos reservados.</p>
-            </div>
+    <section class="container py-5">
+    <div class="row g-4 text-center">
+        <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+            <img src="assets/img1.png" alt="Acompanhe suas aulas" class="benefit-img mx-auto">
+            <h5 class="mt-3">Acompanhe suas aulas</h5>
+            <p>Tenha acesso fácil às plataformas de ensino e materiais digitais.</p>
         </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+            <img src="assets/img2.png" alt="Pesquise melhor" class="benefit-img mx-auto">
+            <h5 class="mt-3">Pesquise melhor</h5>
+            <p>Agilidade para estudar, pesquisar e preparar trabalhos acadêmicos.</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="card border-0 shadow-sm p-4 h-100">
+            <img src="assets/img3.png" alt="Inclui todos" class="benefit-img mx-auto">
+            <h5 class="mt-3">Inclui todos</h5>
+            <p>Um projeto voltado para garantir inclusão digital no IFCE.</p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- Formulário de contato -->
+    <section class="container py-5" id="contato">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Seu Nome" required>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="Seu E-mail" required>
+            </div>
+            <div class="col-12">
+                <textarea class="form-control" rows="4" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-butao btn-lg">Enviar Mensagem</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="container-fluid text-center p-4 text-white">
+        <p>&copy; 2025 EcoNote. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

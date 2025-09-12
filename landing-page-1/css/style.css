@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
+    background:  #e6f0f7;
 }
 
 .navbar-econote {
@@ -30,45 +31,83 @@ html, body {
     color: #ddd; 
 }
 
+.hero-img {
+    max-width: 90%;
+    margin-top: -20px; 
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        margin-top: 0;
+        max-width: 100%;
+    }
+}
+
 .btn-butao {
-    background-color: #009997;  /* cor de fundo */
-    color: white;               /* cor do texto */
-    border: none;               /* remove borda padrão */
+    background-color: #009997;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    transition: 0.3s;
 }
 
 .btn-butao:hover {
-    background-color: #00796b;  /* cor quando passa o mouse */
+    background-color: #00796b;
     color: #fff;
+    transform: scale(1.05);
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    background-color: #f4e4b2;
+.benefit-img {
+    max-width: 300px;   
+    height: auto;       
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
 }
 
-main {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
+.benefit-img:hover {
+    transform: scale(1.1);
+}
+
+
+.benefit-img:hover {
+    transform: scale(1.1); /* zoom suave ao passar o mouse */
+}
+
+
+section {
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+section:nth-of-type(even) {
+    background-color: #f9f9f9;
+}
+
+form .form-control {
+    border-radius: 8px;
+    padding: 12px;
 }
 
 footer {
     background-color: #343a40; 
     color: #f8f9fa; 
-    padding: 1.5rem 1rem;
 }
 
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 576px) {
-    h2, h3 {
-        font-size: 1.2rem;
-    }
-    p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
+    h1 { font-size: 1.8rem; }
+    h2, h3 { font-size: 1.2rem; }
+    p { font-size: 0.9rem; line-height: 1.4; }
 
     .btn {
         font-size: 0.9rem;
@@ -76,7 +115,6 @@ footer {
         display: block;
         margin: 10px auto;
     }
-
 
     .navbar-custom {
         font-size: 14px;
