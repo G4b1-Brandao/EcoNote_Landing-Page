@@ -67,12 +67,12 @@ Uma **Landing Page (ou página de captura)** é uma página independente que inc
 
 ## ✅ Checklist
 
-* [ ] Uso de CSS (seletores, hover, customizações).
-* [ ] Responsividade em **3 larguras** (desktop, tablet, mobile).
-* [ ] Criação de **formulário de contato**.
-* [ ] Organização do repositório no GitHub.
-* [ ] Commits descritivos de todos os integrantes.
-* [ ] Criação de tarefas no **Trello**.
+* [x] Uso de CSS (seletores, hover, customizações).
+* [x] Responsividade em **3 larguras** (desktop, tablet, mobile).
+* [x] Criação de **formulário de contato**.
+* [x] Organização do repositório no GitHub.
+* [x] Commits descritivos de todos os integrantes.
+* [x] Criação de tarefas no **Trello**.
 
 ---
 
