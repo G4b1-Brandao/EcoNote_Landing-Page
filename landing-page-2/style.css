@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary: #52BAAC;
   --secondary: #0B2130;
@@ -98,10 +102,82 @@ body{
     transition: all 0.3s ease; 
 }
 
+.btn-gradient-2 {
+    color: var(--text);
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 200px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border: none; 
+    padding: 10px 10px;   
+    border-radius: 8px;   
+    font-size: 16px;      
+    cursor: pointer;      
+    transition: all 0.3s ease; 
+}
+
 .btn-gradient:hover {
     color: #0B2130;
     transform: scale(1.05); 
 }
+
+.cards h1{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cards p{
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-card{
+    
+}
+
+.phone-card:hover .phone-icon{
+    animation: spotlightIn 500ms ease-out forwards;
+}
+
+.phone-card:not(:hover) .phone-icon{
+    animation: spotlightOut 500ms ease-out forwards;
+}
+
+.phone-icon{
+    width: 100px;
+}
+
+.fix-card:hover .fix-icon{
+    animation: spotlightIn 500ms ease-out forwards;
+}
+
+.fix-card:not(:hover) .fix-icon{
+    animation: spotlightOut 500ms ease-out forwards;
+}
+
+.fix-icon{
+    width: 100px;
+}
+
+.send-card:hover .send-icon{
+    animation: spotlightIn 500ms ease-out forwards;
+}
+
+.send-card:not(:hover) .send-icon{
+    animation: spotlightOut 500ms ease-out forwards;
+}
+
+.send-icon{
+    width: 100px;
+}
+
+.form-section {
+  background-color: var(--secondary); /* cor do fundo da seção */
+}
+
+
 
 @font-face {
     font-family: 'Montserrat';
@@ -119,4 +195,26 @@ body{
 
 footer {
     background-color: var(--secondary-darker);
+}
+
+@keyframes spotlightIn {
+    from{
+        transform: scale(1);
+        fill: black;
+    }
+    to{
+        transform: scale(1.1);
+        fill: var(--primary);
+    }
+}
+
+@keyframes spotlightOut {
+    from{
+        transform: scale(1.1);
+        fill: var(--primary);
+    }
+    to{
+        transform: scale(1);
+        fill: black;
+    }
 }
